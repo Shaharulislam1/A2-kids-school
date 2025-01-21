@@ -126,6 +126,24 @@
     margin: 10px auto;
     border-style: none;
 }
+.card-btn > a{
+    text-decoration: none;
+}
+.arrow{
+    border: solid orange;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 8px;
+}
+.arrow:hover{
+    border-color: #3CD8E8;
+}
+.right{
+    transform: rotate(135deg);
+}
+.left{
+    transform: rotate(-45deg);
+}
 /* our stories section styles */
 .our-stories{
     height: 110vh;
@@ -252,7 +270,8 @@
 }
 
 @media screen and (max-width:576px) {
-    .nav-items{
+    .nav-items,
+    .arrow{
         display: none;
     }
     .banner-section{
@@ -271,7 +290,7 @@
     .hide{
         display: none;
     }
-    ..foot-section{
+    .foot-section{
         flex-direction: column;
     }
 }
