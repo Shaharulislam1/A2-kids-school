@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* shared styles for color */
+.orange{
+    color: orange;
+}
+.sky-blue{
+    color: skyblue;
+}
+.color-05{
+    color: #05D4DF;
+}
+.color-5d{
+    color: #5D58EF;
+}
+.nav-section{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    gap: 5px ;
+}
+.nav-items{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.1rem;
+}
+.nav-items a{
+    text-decoration: none;
+}
+.nav-btn{
+    color: white;
+    background-color: orange;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-style: none;
+}
+.banner-section{
+    display: flex;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.banner-title{
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+.banner-description{
+    font-size: 1.1rem;
+    color: black;
+}
+.banner-description{
+    font-weight: 400;
+    color: #808080;
+}
+.banner-btn{
+    color: white;
+    background-color: black;
+    font-size: 1.1rem;
+    padding: 7px 20px;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+.banner-img{
+    width: 100%;
+}
+/* curriculum section style */
+.curriculum-section{
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+    background-image: url(../assets/bg.png);
+}
+.Curriculum-title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.cards-section{
+    display: flex;
+    margin: 15px auto;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.card-1{
+    border: 2px solid white;
+    border-radius: 20px;
+    max-width: 300px; 
+    padding: 10px; 
+    background: linear-gradient(skyblue, rgb(236, 231, 231));
+}
+.card-2{
+    border: 2px solid white;
+    border-radius: 20px;
+    max-width: 300px;
+    padding: 10px;
+    background: linear-gradient(#cfae9a, #ececf2) ;
+}
+.card-3{
+    border: 2px solid white;
+    border-radius: 20px;
+    max-width: 300px;
+    padding: 10px;
+    background: linear-gradient(#c88cc5, #f6eeee);
+}
+.card-description{
+    font-weight: 500;
+    color: #808080;
+    margin: 15px 0;
+}
+.card-btn{
+    background-color: rgb(233, 230, 230);
+    margin: 10px auto;
+    border-style: none;
+}
+@media screen and (max-width:576px) {
+    .nav-items{
+        display: none;
+    }
+    .banner-section{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .cards-section{
+        flex-direction: column;
+    }
+}
