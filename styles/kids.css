@@ -3,6 +3,9 @@
     padding: 0;
 }
 /* shared styles for color */
+.hide{
+    /* display: none; */
+}
 .orange{
     color: orange;
 }
@@ -45,7 +48,7 @@
 .banner-section{
     display: flex;
     align-items: center;
-    max-width: 1140px;
+    max-width: 1000px;
     margin: 0 auto;
     margin-bottom: 30px;
 }
@@ -74,7 +77,7 @@
 }
 /* curriculum section style */
 .curriculum-section{
-    max-width: 1140px;
+    max-width: 1000px;
     margin: 0 auto;
     margin-bottom: 50px;
     text-align: center;
@@ -83,6 +86,7 @@
 .Curriculum-title{
     font-size: 2rem;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 .cards-section{
     display: flex;
@@ -122,6 +126,131 @@
     margin: 10px auto;
     border-style: none;
 }
+/* our stories section styles */
+.our-stories{
+    height: 110vh;
+    margin-top: 50px auto;
+    background-image: url(../assets/bg.png);
+    background: linear-gradient(white, #c6a161);
+    text-align: center;
+    
+}
+.our-title{
+    text-align: center;
+    margin: 20px auto;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.our{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.our-story-section{
+    display: flex;
+    gap: 15px;
+    justify-content: center;  
+}
+.four-story{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    
+}
+.story-1{
+    padding: 2px;
+    border-radius: 15px;
+    background-color: white;
+}
+.some-text{
+   margin-top: 20px;
+}
+.story-1-img{
+     border-radius: 15px 15px 0 0;
+}
+.story-1-title{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.btn-1{
+    color: white;
+    background-color: #3CD8E8;
+    font-size: 1.0rem;
+    padding: 7px 20px;
+    border-radius: 15px;
+    border-style: none;
+    margin-top: -20px;
+}
+.story-2{
+    background-color: white;
+    border-radius: 10px;
+}
+.story-title{
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 10px auto;
+}
+.btn-2{
+    color: white;
+    background-color:#5D58EF;
+    font-size: 1.rem;
+    padding: 7px 20px;
+    border-radius: 15px;
+    border-style: none;
+    margin-top: -30px;
+}
+.btn-3{
+    color: white;
+    background-color:orange;
+    font-size: 1.rem;
+    padding: 7px 20px;
+    border-radius: 15px;
+    border-style: none;
+    margin-top: -30px;
+}
+.btn-4{
+    color: white;
+    background-color:brown;
+    font-size: 1.rem;
+    padding: 7px 20px;
+    border-radius: 15px;
+    border-style: none;
+    margin-top: -30px;
+}
+.btn-5{
+    color: white;
+    background-color:chartreuse;
+    font-size: 1.rem;
+    padding: 7px 20px;
+    border-radius: 15px;
+    border-style: none;
+    margin-top: -30px;
+}
+.black-btn{
+    color: white;
+    background-color: black;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 15px;
+    width: 10rem;
+    margin-top: 3em;
+}
+.foot-section{
+    height: 60vh;
+    margin: 0 auto;
+    background-color: #01ACFD;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.kids{
+    max-width: 22em;
+}
+.about ul > li{
+    list-style: none;
+    
+}
+
 @media screen and (max-width:576px) {
     .nav-items{
         display: none;
@@ -131,6 +260,18 @@
         text-align: center;
     }
     .cards-section{
+        flex-direction: column;
+    }
+    .four-story{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        gap: 20px;
+        
+    }
+    .hide{
+        display: none;
+    }
+    ..foot-section{
         flex-direction: column;
     }
 }
