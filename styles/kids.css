@@ -37,6 +37,26 @@
 .nav-items a{
     text-decoration: none;
 }
+.nav-link{
+    transition: 0.7s ease;
+}
+.nav-link:hover{
+    color: black;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
 .nav-btn{
     color: white;
     background-color: orange;
@@ -143,11 +163,10 @@
 }
 .left{
     transform: rotate(-45deg);
-}
+}   
 /* our stories section styles */
 .our-stories{
-    height: 110vh;
-    margin-top: 50px auto;
+    margin-top: 0 auto;
     background-image: url(../assets/bg.png);
     background: linear-gradient(white, #c6a161);
     text-align: center;
@@ -250,10 +269,10 @@
     padding: 10px 20px;
     border-radius: 15px;
     width: 10rem;
-    margin-top: 3em;
+    margin: 3rem auto;
 }
 .foot-section{
-    height: 60vh;
+    height: 50vh;
     margin: 0 auto;
     background-color: #01ACFD;
     color: white;
@@ -262,16 +281,48 @@
     justify-content: space-evenly;
 }
 .kids{
-    max-width: 22em;
+    max-width: 20em;
+}
+.kids-img{
+  display: flex; 
+  align-items: center;
+  margin-bottom: 1.8rem;
+}
+.kids-title{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.kids-description{
+    font-weight: 450;
+    margin-top: 1.5rem;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;  
 }
 .about ul > li{
-    list-style: none;
-    
+    list-style: none;   
+}
+.list-item{
+    display: flex;
+    flex-direction: column;
+    gap: 1.0rem;
+}
+.keep-touch{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom:4rem ;
 }
 
 @media screen and (max-width:576px) {
+    .hamburger{
+        display: block;
+    }
     .nav-items,
-    .arrow{
+    .arrow,
+    .nav-btn{
         display: none;
     }
     .banner-section{
@@ -280,6 +331,7 @@
     }
     .cards-section{
         flex-direction: column;
+        
     }
     .four-story{
         grid-template-columns: repeat(1,1fr);
@@ -292,5 +344,6 @@
     }
     .foot-section{
         flex-direction: column;
+        align-items: stretch;
     }
 }
